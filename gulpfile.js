@@ -4,6 +4,9 @@ const imagemin = require("gulp-imagemin");
 const plumber = require("gulp-plumber");
 const less = require("gulp-less");
 const browserSync = require("browser-sync").create();
+const svgSprite = require('gulp-svg-sprite');
+const svgstore = require('gulp-svgstore');
+const rename = require("gulp-rename");
 
 gulp.task("html", () => {
   return gulp.src("source/*.html").pipe(gulp.dest("./build"));
@@ -22,10 +25,40 @@ gulp.task("css", function () {
 
 gulp.task("imagemin", function () {
   return gulp
-    .src("source/img/**/*")
+    .src("source/img/*.{jpg,png}")
     .pipe(imagemin())
     .pipe(gulp.dest("./build/img"));
 });
+
+gulp.task("sprite", function () { 
+  return gulp.src("source/img/*.svg") 
+    .pipe(imagemin([imagemin.svgo()])) 
+    .pipe(svgstore({ 
+      inlineSvg: true 
+    })) 
+    .pipe(rename("sprite.svg")) 
+    .pipe(gulp.dest("build/img")); 
+});
+
+gulp.task('svgstore', () => {
+    return gulp
+        .src('source/img/*.svg')
+        .pipe(svgmin((file) => {
+            const prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('build/img'));
+});
+
+
 
 gulp.task("watch", () => {
   browserSync.init({
