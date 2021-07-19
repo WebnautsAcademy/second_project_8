@@ -7,6 +7,8 @@ const browserSync = require("browser-sync").create();
 const svgSprite = require('gulp-svg-sprite');
 const svgstore = require('gulp-svgstore');
 const rename = require("gulp-rename");
+// const ttf2woff = require('gulp-ttf2woff');
+// const ttf2woff2 = require('gulp-ttf2woff2');
 
 gulp.task("html", () => {
   return gulp.src("source/*.html").pipe(gulp.dest("./build"));
@@ -58,6 +60,17 @@ gulp.task('svgstore', () => {
         .pipe(gulp.dest('build/img'));
 });
 
+// gulp.task('ttf2woff', function(){
+//   gulp.src(['source/fonts/*.ttf'])
+//     .pipe(ttf2woff())
+//     .pipe(gulp.dest('./build/fonts'));
+// });
+
+// gulp.task('ttf2woff2', function(){
+//    gulp.src(['fonts/*.ttf'])
+//     .pipe(ttf2woff())
+//     .pipe(gulp.dest('fonts/'));
+// });
 
 
 gulp.task("watch", () => {
