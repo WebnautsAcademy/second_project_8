@@ -39,23 +39,28 @@ dl,
 dd {
   margin: 0;
 }
+.container {
+  max-width: 375px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @font-face {
   font-family: 'BebasNeue';
-  src: url('.../fonts/BebasNeue\ Bold.ttf');
+  src: url('../fonts/BebasNeue\ Bold.ttf');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'BebasNeue';
-  src: url('.../fonts/BebasNeue Regular.ttf');
+  src: url('../fonts/BebasNeue Regular.ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'SFProDisplay';
-  src: url('.../fonts/SFProDisplay-Medium.ttf');
+  src: url('../fonts/SFProDisplay-Medium.ttf');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -67,8 +72,66 @@ dd {
   font-style: normal;
   font-display: swap;
 }
-.container {
-  max-width: 375px;
-  padding-left: 15px;
-  padding-right: 15px;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
+}
+.modal-open {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #262626;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+.modal {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f4f4f4;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  width: 375px;
+  height: 540px;
+}
+.modal__list {
+  margin-left: 112px;
+  margin-right: 112px;
+}
+.modal__item {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #262626;
+}
+.modal__item:not(:last-child) {
+  margin-bottom: 56px;
+}
+.button {
+  width: 240px;
+  height: 65px;
+  border: 1px solid #83c1fa;
+  border-radius: 60px;
+}
+.button__text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header__button {
+  margin-top: 111px;
+  margin-left: 52px;
+  margin-right: 53px;
 }

@@ -10,25 +10,36 @@
 	<header class="header">
 		<div class="container header__container">
 			<div class="logo header__logo">
-				<svg width="46px" height="19px"><use xlink:href="/img/sprite.svg#logoLight-mobile"></use></svg>
+				<svg width="46px" height="19px">
+					<use xlink:href="/img/sprite.svg#logoLight-mobile"></use>
+				</svg>
 			</div>
 			<button class="switch header__switch">
-				<svg><use xlink:href="/img/sprite.svg#night mode"></use></svg>
+				<svg width="24px" height="24px">
+					<use xlink:href="/img/sprite.svg#night mode"></use>
+				</svg>
 			</button>
-			<div class="navigation">
-				<ul class=" navigation__list">
-					<li class="header__item">Обо мне</li>
-					<li class="header__item">Мои проекты</li>
-					<li class="header__item">Отзывы</li>
-				</ul>
+			<button type="button" class="modal-open">
+				<svg width="26px" height="15px">
+					<use xlink:href="/img/sprite.svg#icon-modalOpen"></use>
+				</svg>
+			</button>
+			<div class="modal">
+				<div class="container">
+					<ul class=" modal__list">
+						<li class="modal__item">Обо мне</li>
+						<li class="modal__item">Мои проекты</li>
+						<li class="modal__item">Отзывы</li>
+					</ul>
+				<button class="button header__button">
+					<span class="button__text">связаться со мной</span>
+				</button>
+				</div>
 			</div>
-			<button class="button header__button">
-				<span class="button__text">связаться со мной</span>
-			</button>
+			
 		</div>
 	</header>
 	<main class="main">
-		
 			<section class="hero ">
 				<div class="container">
 				<h1 class="title hero__title visually-hidden"></h1>
@@ -38,7 +49,6 @@
 				масштабирования бизнеса</p>
 				</div>
 			</section>
-		
 		
 			<section class="about-me ">
 				<div class="container">
@@ -51,7 +61,6 @@
 				<img class="about-me__icon" src="" alt="парень с ноутом">
 				</div>
 			</section>
-		
 		
 			<section class="specializations">
 				<div class="container">
@@ -96,7 +105,6 @@
 				</div>
 			</section>
 		
-		
 			<section class="reviews">
 				<div class="container">
 				<h2 class="title reviews__title ">Отзывы клиентов</h2>
@@ -120,7 +128,7 @@
 				</figure>
 				</div>
 			</section>
-		
+
 	</main>
 	<footer class="footer">
 		<div class="container">
@@ -134,5 +142,6 @@
 		связанным с масштабированием бизнеса</p>
 		</div>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>
