@@ -1,8 +1,8 @@
-  let popUp = document.querySelector(".modal");
-    let popUpAgree = document.querySelector(".modal__open");
+   let popUp = document.querySelector(".modal");
+    let popUpAgree = document.querySelector(".modal-open");
 
-    let btn = document.querySelector(".main__btn");
-    let popUpClose = document.querySelector('.modal__btn');
+    let button = document.querySelector(".modal-open");
+    let popUpClose = document.querySelector('.modal__close');
 
     function showPopUpOnClick() {
         popUp.classList.add('modal-show');
@@ -17,5 +17,5 @@
         popUpAgree.classList.remove('modal-show');
 
     }
-    btn.addEventListener("click", showPopUpOnClick);
+    button.addEventListener("click", showPopUpOnClick);
 popUpClose.addEventListener('click', closePopUpOnClick);

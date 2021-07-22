@@ -13,9 +13,13 @@
   padding-right: 10px;
   padding-top: 15px;
   padding-bottom: 16px;
+
+  &__icon {
+    color: #262626;
+  }
 }
 .modal {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,8 +45,23 @@
   &__item:not(:last-child) {
     margin-bottom: 56px;
   }
-}
+  &__button {
+    margin-top: 111px;
+    margin-left: 52px;
+    margin-right: 53px;
+  }
 
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+.modal-show {
+  display: block;
+  // animation-name: fadeIn;
+  // animation-duration: 5s;
+}
 .button {
   width: 240px;
   height: 65px;
@@ -57,10 +76,4 @@
     align-items: center;
     text-transform: uppercase;
   }
-}
-
-.header__button {
-  margin-top: 111px;
-  margin-left: 52px;
-  margin-right: 53px;
 }

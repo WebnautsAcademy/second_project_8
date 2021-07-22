@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <clipPath id="clip0">
-            <path fill="#fff" d="M0 0h24v24H0z" />
+        <clipPath id="clip1">
+            <path d="M0 0h24v24H0z" />
         </clipPath>
-        <clipPath id="clip0">
+        <clipPath id="clip2">
             <path fill="#fff" d="M0 0h22v22H0z" />
         </clipPath>
-        <clipPath id="clip0">
+        <clipPath id="clip3">
             <path fill="#fff" d="M0 0h86v86H0z" />
         </clipPath>
     </defs>
     <symbol id="close">
-        <g clip-path="url(#clip0)" fill="#fff">
+        <g clip-path="url(#clip1)">
             <path
                 d="M23.716.284a.97.97 0 00-1.37 0L.283 22.345a.97.97 0 101.371 1.371l22.061-22.06a.97.97 0 000-1.372z" />
             <path
@@ -24,7 +24,7 @@
             fill="#fff" />
     </symbol>
     <symbol id="icon-closeList">
-        <g clip-path="url(#clip0)">
+        <g clip-path="url(#clip2)">
             <path d="M11 15.537L15.537 11l1.297 1.296L11 18.13l-5.834-5.834L6.463 11 11 15.537z" fill="#262626" />
         </g>
     </symbol>
@@ -39,7 +39,7 @@
             fill="#262626" />
     </symbol>
     <symbol id="icon-mail">
-        <g clip-path="url(#clip0)">
+        <g clip-path="url(#clip3)">
             <path
                 d="M.75 10.75h64.5a3.583 3.583 0 013.583 3.583v57.334a3.583 3.583 0 01-3.583 3.583H.75a3.583 3.583 0 01-3.583-3.583V14.333A3.583 3.583 0 01.75 10.75zm32.465 31.114L10.24 22.353l-4.64 5.46 27.663 23.49 27.165-23.507-4.687-5.422-22.521 19.49h-.004z"
                 fill="#E0E0E0" />
