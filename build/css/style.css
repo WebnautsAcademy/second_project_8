@@ -1,12 +1,47 @@
-:root {
-  --Design_darkPrimary: #fff;
-  --Design_lightPrimary: #262626;
-  --main-font: 'BebasNeue', sans-serif;
-  --second-font: 'SFProDisplay', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 @font-face {
   font-family: 'BebasNeue';
-  src: url('.../fonts/BebasNeue Bold.ttf');
+  src: url('.../fonts/BebasNeue\ Bold.ttf');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -32,10 +67,8 @@
   font-style: normal;
   font-display: swap;
 }
-body {
-  font-family: Gilroy;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.21;
+.container {
+  max-width: 375px;
+  padding-left: 15px;
+  padding-right: 15px;
 }

@@ -10,17 +10,16 @@
 	<header class="header">
 		<div class="container header__container">
 			<div class="logo header__logo">
-				<span class="logo__text">fro</span>
-				<img src="" alt="логотип" class="logo__icon">
+				<svg width="46px" height="19px"><use xlink:href="/img/sprite.svg#logoLight-mobile"></use></svg>
 			</div>
 			<button class="switch header__switch">
-				<img src="" alt="">
+				<svg><use xlink:href="/img/sprite.svg#night mode"></use></svg>
 			</button>
 			<div class="navigation">
-				<ul class="list navigation__list">
-					<li class="item header__item">Обо мне</li>
-					<li class="item header__item">Мои проекты</li>
-					<li class="item header__item">Отзывы</li>
+				<ul class=" navigation__list">
+					<li class="header__item">Обо мне</li>
+					<li class="header__item">Мои проекты</li>
+					<li class="header__item">Отзывы</li>
 				</ul>
 			</div>
 			<button class="button header__button">
@@ -28,18 +27,21 @@
 			</button>
 		</div>
 	</header>
-	<main>
-		<div class="container">
+	<main class="main">
+		
 			<section class="hero ">
+				<div class="container">
 				<h1 class="title hero__title visually-hidden"></h1>
 				<h3 class="title-decor hero__title-decor">бизнес-консалтинг </h3>
 				<img class="hero__icon" src="" alt="">
 				<p class="hero__text">Консультирую по вопросам
 				масштабирования бизнеса</p>
+				</div>
 			</section>
-		</div>
-		<div class="container">
+		
+		
 			<section class="about-me ">
+				<div class="container">
 				<h2 class="title about-me__title">обо мне</h2>
 				<p class="text about-me__text">По их почти единодушному мнению, самоактуализация откровенна. Толпа понимает объект. Действие точно аннигилирует
 				генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз. По их почти единодушному мнению, самоактуализация
@@ -47,10 +49,12 @@
 				гомеостаз.</p>
 				<img class="about-me__icon" src="" alt="парень">
 				<img class="about-me__icon" src="" alt="парень с ноутом">
+				</div>
 			</section>
-		</div>
-		<div class="container">
+		
+		
 			<section class="specializations">
+				<div class="container">
 				<h2 class="title specializations__title">Основные специализации</h2>
 				<ol class="specializations__list">
 					<li class="specializations__item">Увеличение продаж 
@@ -64,18 +68,20 @@
 					<li class="specializations__item">И еще что-то</li>
 					<li class="specializations__item">И еще одно что-нибудь</li>
 				</ol>
+				</div>
 			</section>
-		</div>
-		<div class="container">
+		
 			<section class="slider">
+				<div class="container">
 				<button class="btn-slider">назад</button>
 				<button class="btn-slider">дальше</button>
 				<h2 class="title slider__title">О проекте</h2>
 				<h3 class="title-decor slider__title-decor">webnauts webnauts</h3>
+				</div>
 			</section>
-		</div>
-		<div class="container">
+		
 			<section class="projects">
+				<div class="container">
 				<h2 class="title projects__title"> Другие проекты</h2>
 				<img class="projects__icon" src="" alt="">
 				<span class="projects__decor">01</span>
@@ -87,10 +93,12 @@
 				аннигилирует генезис. Самонаблюдение, конечно, притягивает филосовский гомеостаз.</p>
 				<button class="btn-slider">назад</button>
 				<button class="btn-slider">дальше</button>
+				</div>
 			</section>
-		</div>
-		<div class="container">
+		
+		
 			<section class="reviews">
+				<div class="container">
 				<h2 class="title reviews__title ">Отзывы клиентов</h2>
 				<figure class="figure reviews__figure">
 					<img class="reviews__icon" src="" alt="смит">
@@ -110,18 +118,21 @@
 						<h4 class="figure__title">Дядя Ваня</h4><span class="figure__text">Обувщик</span>
 					</figcaption>
 				</figure>
+				</div>
 			</section>
-		</div>
+		
 	</main>
 	<footer class="footer">
+		<div class="container">
 		<h2 class="title footer__title">Напишите мне</h2>
-		<ul class="list footer__list">
-			<li class="item footer__item"></li>
-			<li class="item footer__item"></li>
-			<li class="item footer__item"></li>
+		<ul class="footer__list">
+			<li class="footer__item"><svg><use xlink:href="/img/sprite.svg#icon-mail"></use></svg></li>
+			<li class="footer__item"><svg><use xlink:href="/img/sprite.svg#icon-facebook"></use></svg></li>
+			<li class="footer__item"><svg><use xlink:href="/img/sprite.svg#icon-telegram"></use></svg></li>
 		</ul>
 		<p class="footer__text">Проконсультирую по любым вопросам,
 		связанным с масштабированием бизнеса</p>
+		</div>
 	</footer>
 </body>
 </html>
